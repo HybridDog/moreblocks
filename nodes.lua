@@ -457,19 +457,13 @@ local nodes = {
 
 for name, def in pairs(nodes) do
 	def.tiles = def.tiles or {"moreblocks_" ..name.. ".png"}
-	minetest.register_node("moreblocks:" ..name, def)
-	minetest.register_alias(name, "moreblocks:" ..name)
+	local nodename = "moreblocks:" ..name
+	minetest.register_node(nodename, def)
+	minetest.register_alias(name, nodename)
 	if not def.no_stairs then
-		local groups = {}
-		for k, v in pairs(def.groups) do groups[k] = v end
-		stairsplus:register_all("moreblocks", name, "moreblocks:" ..name, {
-			description = def.description,
-			groups = groups,
-			tiles = def.tiles,
-			sunlight_propagates = def.sunlight_propagates,
-			light_source = def.light_source,
-			sounds = def.sounds,
-		})
+		stairs.register_stair_and_slab({origin = nodename})
+		minetest.register_alias("stairs:stair_moreblocks_"..name, "moreblocks:stair_"..name)
+		minetest.register_alias("stairs:slab_moreblocks_"..name, "moreblocks:slab_"..name)
 	end
 end
 

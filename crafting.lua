@@ -6,36 +6,6 @@ Licensed under the zlib license. See LICENSE.md for more information.
 --]]
 
 minetest.register_craft({
-	output = "default:stick",
-	recipe = {{"default:dry_shrub"},}
-})
-
-minetest.register_craft({
-	output = "default:stick",
-	recipe = {{"group:sapling"},}
-})
-
-minetest.register_craft({
-	output = "default:wood",
-	recipe = {
-		{"default:stick", "default:stick"},
-		{"default:stick", "default:stick"},
-	}
-})
-
-minetest.register_craft({
-	output = "default:dirt_with_grass",
-	type = "shapeless",
-	recipe = {"default:junglegrass", "default:dirt"},
-})
-
-minetest.register_craft({
-	output = "default:mossycobble",
-	type = "shapeless",
-	recipe = {"default:junglegrass", "default:cobble"},
-})
-
-minetest.register_craft({
 	output = "moreblocks:wood_tile 9",
 	recipe = {
 		{"group:wood", "group:wood", "group:wood"},
@@ -293,29 +263,6 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "default:chest_locked",
-	type = "shapeless",
-	recipe = {"default:steel_ingot", "default:chest"},
-})
-minetest.register_craft({
-	output = "default:chest_locked",
-	type = "shapeless",
-	recipe = {"default:copper_ingot", "default:chest"},
-})
-
-minetest.register_craft({
-	output = "default:chest_locked",
-	type = "shapeless",
-	recipe = {"default:bronze_ingot", "default:chest"},
-})
-
-minetest.register_craft({
-	output = "default:chest_locked",
-	type = "shapeless",
-	recipe = {"default:gold_ingot", "default:chest"},
-})
-
-minetest.register_craft({
 	output = "moreblocks:iron_glass",
 	type = "shapeless",
 	recipe = {"default:steel_ingot", "default:glass"},
@@ -347,33 +294,9 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = "moreblocks:glow_glass",
-	type = "shapeless",
-	recipe = {"default:torch", "default:glass"},
-})
-
-minetest.register_craft({
-	output = "moreblocks:trap_glow_glass",
-	type = "shapeless",
-	recipe = {"default:mese_crystal_fragment", "default:glass", "default:torch"},
-})
-
-minetest.register_craft({
-	output = "moreblocks:trap_glow_glass",
-	type = "shapeless",
-	recipe = {"default:mese_crystal_fragment", "moreblocks:glow_glass"},
-})
-
-minetest.register_craft({
 	output = "moreblocks:super_glow_glass",
 	type = "shapeless",
 	recipe = {"default:torch", "default:torch", "default:glass"},
-})
-
-minetest.register_craft({
-	output = "moreblocks:super_glow_glass",
-	type = "shapeless",
-	recipe = {"default:torch", "moreblocks:glow_glass"},
 })
 
 
@@ -480,6 +403,7 @@ minetest.register_craft({
 	}
 })
 
+--[[
 minetest.register_craft({
 	output = "moreblocks:dirt_compressed",
 	recipe = {
@@ -512,7 +436,7 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking", output = "moreblocks:tar", recipe = "default:pine_tree",
-})
+})--]]
 
 minetest.register_craft({
 	type = "shapeless",

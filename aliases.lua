@@ -7,7 +7,6 @@ Licensed under the zlib license. See LICENSE.md for more information.
 
 -- More Blocks aliases:
 minetest.register_alias("sweeper", "moreblocks:sweeper")
-minetest.register_alias("circular_saw", "moreblocks:circular_saw")
 minetest.register_alias("jungle_stick", "moreblocks:jungle_stick")
 
 -- Old block/item replacement:
@@ -23,10 +22,6 @@ minetest.register_alias("moreblocks:fence_junglewood", "default:fence_junglewood
 minetest.register_alias("moreblocks:fence_jungle_wood", "default:fence_junglewood")
 minetest.register_alias("moreblocks:jungle_stick", "default:stick")
 
-for _, t in pairs(circular_saw.names) do
-	minetest.register_alias("moreblocks:" .. t[1] .. "_jungle_wood" .. t[2],
-			"moreblocks:" .. t[1] .. "_junglewood" .. t[2])
-end
 minetest.register_alias("moreblocks:horizontaltree", "moreblocks:horizontal_tree")
 minetest.register_alias("moreblocks:horizontaljungletree", "moreblocks:horizontal_jungle_tree")
 minetest.register_alias("moreblocks:stonesquare", "moreblocks:stone_tile")
@@ -44,7 +39,6 @@ minetest.register_alias("moreblocks:woodtile_left", "moreblocks:wood_tile_left")
 minetest.register_alias("moreblocks:woodtile_right", "moreblocks:wood_tile_right")
 minetest.register_alias("moreblocks:coalglass", "moreblocks:coal_glass")
 minetest.register_alias("moreblocks:ironglass", "moreblocks:iron_glass")
-minetest.register_alias("moreblocks:glowglass", "moreblocks:glow_glass")
 minetest.register_alias("moreblocks:superglowglass", "moreblocks:super_glow_glass")
 minetest.register_alias("moreblocks:trapglass", "moreblocks:trap_glass")
 minetest.register_alias("moreblocks:trapstone", "moreblocks:trap_stone")

@@ -25,10 +25,10 @@ moreblocks.intllib = S
 local modpath = minetest.get_modpath("moreblocks")
 
 dofile(modpath .. "/config.lua")
-dofile(modpath .. "/circular_saw.lua")
-dofile(modpath .. "/stairsplus/init.lua")
+--dofile(modpath .. "/circular_saw.lua")
+--dofile(modpath .. "/stairsplus/init.lua")
 dofile(modpath .. "/nodes.lua")
-dofile(modpath .. "/redefinitions.lua")
+--dofile(modpath .. "/redefinitions.lua")
 dofile(modpath .. "/crafting.lua")
 dofile(modpath .. "/aliases.lua")
 
